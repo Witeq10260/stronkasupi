@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Pogotowie komputerowe</title>
+</head>
+<body>
+    <main>
+        <header id="baner">
+            <img src="animacja.gif">
+
+        </header>
+        <header id="menu">
+            <a href="index.html">O nas</a>
+            <a href="kontakt.html">Kontakt</a>
+        </header>
+        <div id="lewy">
+
+        </div>
+        <div id="srodek">
+            <h3>Formularz kontaktowy</h3><br>
+        <table>
+            <form>
+                <tr>
+                    <td>Imię:</td>
+                    <td><input type="text" name="imie" id="imie"></td>
+                </tr>
+                <tr>
+                    <td>Nazwisko:</td>
+                    <td><input type="text" name="nazwisko" id="nazwisko"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="mail" id="mail"></td>
+                </tr>
+                <tr>
+                    <td>Usługa:</td>
+                    <td>
+                        <select name="lista" id="lista">
+                        <option value="naprawa komputera">naprawa komputera</option>
+                        <option value="odzyskiwanie danych">odzyskiwanie danych</option>
+                        <option value="problemy z oprogramowaniem">problemy z oprogramowaniem</option>
+                        <option value="konfiguracja sieci LAN">konfiguracja sieci LAN</option>
+                        <option value="inne">inne</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox" name="wyslij" id="wyslij" checked>Wyślij kopię wiadomości</td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td><button type="reset" id="reset">Resetuj</button><button type="button" onclick="formularz()" id="submit">Prześlij</button></td>
+                </tr>
+
+            </form>
+        </table>
+        <p id="wynik"></p>
+
+        </div>
+        <div id="prawy">
+
+        </div>
+        <footer>
+            <p>Autor strony:<b>1234567890</b></p>
+        </footer>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>
